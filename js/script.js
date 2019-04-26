@@ -63,7 +63,7 @@ d3.json("data/nodes_links_network.json", function(error, graph) {
             .attr("r", 2)
             .style("fill", "black")
             // .style("stroke", "#969696")
-            .style("stroke-width", "1px")
+            // .style("stroke-width", "0.5px")
             .attr("cx", function (d) { return d.x+6; })
             .attr("cy", function(d) { return d.y-6; });
 
