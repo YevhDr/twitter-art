@@ -61,7 +61,7 @@ d3.json("data/nodes_links_network.json", function(error, graph) {
 
         node
             .attr("r", 2)
-            .style("fill", "blue")
+            .style("fill", "black")
             // .style("stroke", "#969696")
             .style("stroke-width", "1px")
             .attr("cx", function (d) { return d.x+6; })
