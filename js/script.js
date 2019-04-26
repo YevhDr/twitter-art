@@ -10,6 +10,9 @@ var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.name; }))
     .force("charge", d3.forceManyBody().strength(20))
     .force("center", d3.forceCenter(width / 3, height / 3));
+    
+
+
 
 d3.json("data/nodes_links_network.json", function(error, graph) {
     if (error) throw error;
